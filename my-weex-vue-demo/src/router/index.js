@@ -1,9 +1,8 @@
 
 import Router from 'vue-router'
-// import DemoVue from '@/components/HelloWorld'
 import DemoVue from 'demoVue'
 import demorRouter from './_include/demo'
-
+/* eslint-disable*/
 Vue.use(Router)
 let newArr = [
   {
