@@ -11,11 +11,6 @@ import { WxcMinibar } from 'weex-ui'
 /* eslint-disable*/
 const modal = weex.requireModule('modal')
 export default {
-  data: function() {
-    return {
-      height:'30px'
-    }
-  },
   components: { WxcMinibar },
   methods: {
     minibarLeftButtonClick() {},

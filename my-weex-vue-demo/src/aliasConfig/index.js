@@ -2,7 +2,7 @@
  * @Author: lcm
  * @Date:   2017-04-17 18:01:21
  * @Last Modified by: lucm
- * @Last Modified time: 2018-02-27 10:26:10
+ * @Last Modified time: 2018-03-01 17:25:30
  */
 
 'use strict'
@@ -20,8 +20,8 @@ var baseObj = {
   base: srcDir + '/tools/base',
   base64: srcDir + '/tools/base64',
 
-  // HelloWorld.vue
-  helloWorldVue: srcDir + '/components/HelloWorld'
+  // home.vue
+  homeVue: srcDir + '/components/home/index'
 }
 var demo = require('./_include/demo')
 var ui = require('./_include/ui')

@@ -1,7 +1,7 @@
 
 import MyVue from 'vue'
 import Router from 'vue-router'
-import DemoVue from 'demoVue'
+import HomeVue from 'demoVue'
 import demorRouter from './_include/demo'
 /* eslint-disable*/
 if (WXEnvironment.platform == 'Web') {
@@ -11,8 +11,8 @@ Vue.use(Router)
 let newArr = [
   {
     path: '/',
-    name: 'DemoVue',
-    component: DemoVue
+    name: 'HomeVue',
+    component: HomeVue
   }
 ]
 let newRouter = [
