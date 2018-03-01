@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const config = require('./config');
 const helper = require('./helper');
 const vueLoaderConfig = require('./vue-loader.conf');
+const webpackConfigPath = require('../src/aliasConfig/index')
 const vueWebTemp = helper.rootNode(config.templateDir);
 const hasPluginInstalled = fs.existsSync(helper.rootNode(config.pluginFilePath));
 const isWin = /^win/.test(process.platform);
@@ -102,9 +103,10 @@ const webConfig = {
    */
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    alias: {
-      '@': helper.resolve('src')
-    }
+    // alias: {
+    //   '@': helper.resolve('src')
+    // }
+    alias: webpackConfigPath
   },
   /*
    * Options affecting the resolving of modules.
@@ -125,7 +127,7 @@ const webConfig = {
         test: /\.vue(\?[^?]+)?$/,
         use: [{
           loader: 'vue-loader',
-          options: Object.assign(vueLoaderConfig({useVue: true, usePostCSS: false}), {
+          options: Object.assign(vueLoaderConfig({ useVue: true, usePostCSS: false }), {
             /**
              * important! should use postTransformNode to add $processStyle for
              * inline style prefixing.
@@ -137,7 +139,7 @@ const webConfig = {
                 el.styleBinding = `$processStyle(${el.styleBinding})`
               }
             }]
-            
+
           })
         }]
       }
@@ -163,9 +165,10 @@ const weexConfig = {
    */
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    alias: {
-      '@': helper.resolve('src')
-    }
+    // alias: {
+    //   '@': helper.resolve('src')
+    // }
+    alias: webpackConfigPath
   },
   /*
    * Options affecting the resolving of modules.
@@ -184,7 +187,7 @@ const weexConfig = {
         test: /\.vue(\?[^?]+)?$/,
         use: [{
           loader: 'weex-loader',
-          options: vueLoaderConfig({useVue: false})
+          options: vueLoaderConfig({ useVue: false })
         }]
       }
     ]
