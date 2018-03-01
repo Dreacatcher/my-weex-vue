@@ -1,0 +1,10 @@
+1、使用sass时 style中增加lang='scss'同时装上sass-loader、node-sass依赖
+2、打包安卓apk时候，修改platforms/android/
+3、在配置defaultConfig中增加
+  javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+4、输出路径修改为
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = rootProject.getName() + "-v" + defaultConfig.versionName + "-" + defaultConfig.versionCode + ".apk";
+        }
+    }
