@@ -2,14 +2,14 @@
 * @Author: lcm
 * @Date:   2017-05-27 14:36:08
  * @Last Modified by: lucm
- * @Last Modified time: 2018-02-26 16:20:18
+ * @Last Modified time: 2018-03-01 17:11:12
 */
 import axios from 'axios'
 import B from 'base'
 
 // ******************************* Setting ***********************************/
 let appid = 'BAS5-520100-0001'
-let appkey = '02e45ae192526ce470d8352e7403134a92526ce470d8352e'
+let appkey = '3232332323'
 let siteid = '520100'
 // ******************************* Setting ***********************************/
 class Fetch {
