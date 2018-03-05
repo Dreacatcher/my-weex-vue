@@ -1,28 +1,37 @@
 <template>
   <weexMyTabBarParent>
-    <div class="item-container" :style="contentStyle">
+    <div class="itemContainer">
       <text>首页</text>
     </div>
-    <div class="item-container" :style="contentStyle">
+    <div class="itemContainer">
       <text>特别推荐</text>
     </div>
-    <div class="item-container" :style="contentStyle">
+    <div class="itemContainer">
       <text>消息中心</text>
     </div>
-    <div class="item-container" :style="contentStyle">
+    <div class="itemContainer">
       <text>我的主页</text>
     </div>
   </weexMyTabBarParent>
 </template>
 
-<style scoped lang='scss'>
-.item-container {
+<style scoped lang='scss' type="text/scss">
+.itemContainer {
+  flex: 1;
+  height: 50px;
   background-color: #f2f3f4;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text {
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 0;
+  }
 }
 </style>
 <script>
+import { Utils } from 'weex-ui'
 import weexMyTabBarParent from 'weexMyTabBarParent'
 export default {
   components: { weexMyTabBarParent },
@@ -74,12 +83,19 @@ export default {
         textPaddingLeft: 10,
         textPaddingRight: 10
       }
-    }
+    },
+    contentStyle: ''
   }),
   created() {
+    console.log(Utils)
     // const tabPageHeight = Utils.env.getPageHeight()
-    // const { tabStyles } = this
-    // this.contentStyle = { height: tabPageHeight - tabStyles.height + 'px' }
+    // 如果页面没有导航栏，可以用下面这个计算高度的方法
+    // const tabPageHeight = env.deviceHeight / env.deviceWidth * 750;
+    const tabStyles = this.configTt.tabStyles
+    console.log('tabStyles111111')
+    console.log(tabStyles)
+    console.log('tabStyles222222')
+    this.contentStyle = { height: tabStyles.height + 'px' }
   },
   methods: {
     wxcTabBarCurrentTabSelected(e) {

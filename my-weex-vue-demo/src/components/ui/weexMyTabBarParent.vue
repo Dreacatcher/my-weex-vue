@@ -31,5 +31,15 @@ export default {
 </script>
 
 <style type="text/scss" lang="scss">
-@import '../../../src/style/_include/_all';
+.weexMyTabBarParentWp {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 750px;
+  height: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #009ff0;
+}
 </style>

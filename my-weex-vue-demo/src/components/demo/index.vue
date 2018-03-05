@@ -10,9 +10,6 @@
 <script>
 import { WxcMinibar } from 'weex-ui'
 import WeexMyTabBar from 'weexMyTabBar'
-console.log('WeexMyTabBar1111')
-console.log(WeexMyTabBar)
-console.log('WeexMyTabBar2222')
 /* eslint-disable*/
 const modal = weex.requireModule('modal')
 export default {
