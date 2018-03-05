@@ -1,11 +1,18 @@
 <template>
-  <div>
-    <weexMyTabBarParent>
-      <div class="item-container" :style="contentStyle">
-        <text>首页</text>
-      </div>
-    </weexMyTabBarParent>
-  </div>
+  <weexMyTabBarParent>
+    <div class="item-container" :style="contentStyle">
+      <text>首页</text>
+    </div>
+    <div class="item-container" :style="contentStyle">
+      <text>特别推荐</text>
+    </div>
+    <div class="item-container" :style="contentStyle">
+      <text>消息中心</text>
+    </div>
+    <div class="item-container" :style="contentStyle">
+      <text>我的主页</text>
+    </div>
+  </weexMyTabBarParent>
 </template>
 
 <style scoped lang='scss'>
@@ -16,7 +23,7 @@
 }
 </style>
 <script>
-import weexMyTabBarParent from './weexMyTabBarParent'
+import weexMyTabBarParent from 'weexMyTabBarParent'
 export default {
   components: { weexMyTabBarParent },
   data: () => ({
@@ -77,7 +84,7 @@ export default {
   methods: {
     wxcTabBarCurrentTabSelected(e) {
       const index = e.page
-      // console.log(index);s
+      console.log(index)
     }
   }
 }
