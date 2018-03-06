@@ -1,32 +1,43 @@
 <template>
   <weexMyTabBarParent>
-    <div class="itemContainer">
-      <text>首页</text>
+    <div class="tabPageWrap" ref="tabPageWrap">
+      <div class="tabContainerWp" ref="tabContainerWp">
+        <slot></slot>
+      </div>
     </div>
-    <div class="itemContainer">
-      <text>特别推荐</text>
-    </div>
-    <div class="itemContainer">
-      <text>消息中心</text>
-    </div>
-    <div class="itemContainer">
-      <text>我的主页</text>
+    <div class="tabTitleList">
+      <div class="barItemContainer" v-for="(item,index) in tabBarConfig.tabTitles" :key="index">
+        <image :src="item.icon"></image>
+        <text class="textStyle">{{item.title}}</text>
+      </div>
     </div>
   </weexMyTabBarParent>
 </template>
 
 <style scoped lang='scss' type="text/scss">
-.itemContainer {
+.tabPageWrap {
+  width: 750px;
   flex: 1;
-  height: 50px;
-  background-color: #f2f3f4;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  text {
-    height: 50px;
-    line-height: 50px;
-    padding: 10px 0;
+  overflow: hidden;
+  .tabContainerWp {
+    flex-direction: row;
+    position: absolute;
+    justify-content: flex-start;
+  }
+  .tabTitleList {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    .barItemContainer {
+      flex: 1;
+      background-color: #f2f3f4;
+      justify-content: center;
+      align-items: center;
+      border-bottom-style: solid;
+      .textStyle {
+        lines: 1;
+      }
+    }
   }
 }
 </style>
@@ -35,6 +46,11 @@ import { Utils } from 'weex-ui'
 import weexMyTabBarParent from 'weexMyTabBarParent'
 export default {
   components: { weexMyTabBarParent },
+  props: {
+    tabBarConfig: {
+      type: Object
+    }
+  },
   data: () => ({
     configTt: {
       tabTitles: [

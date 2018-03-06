@@ -32,14 +32,13 @@ export default {
 
 <style type="text/scss" lang="scss">
 .weexMyTabBarParentWp {
-  position: fixed;
+  display: block;
+  position: absolute;
+  top: 90px;
   left: 0;
+  right: 0;
   bottom: 0;
-  width: 750px;
-  height: 60px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #009ff0;
+  flex-direction: column;
+  min-height: 100%;
 }
 </style>
