@@ -1,9 +1,43 @@
 <template>
-  <div></div>
+  <wxc-tab-bar :tab-titles="tabBarConfig.tabTitles" :tab-styles="tabBarConfig.tabStyles" title-type="icon" @wxcTabBarCurrentTabSelected="wxcTabBarCurrentTabSelected">
+    <!-- 第一个页面内容-->
+    <div class="item-container" :style="contentStyle">
+      <text>首页</text>
+      <text>首页iconfont</text>
+      <text class="icon-browser iconfont"></text>
+      <div class="i-box-l"><text class="i-box-icon adress iconfont i-c-blue">&#xe66a;</text><text class="i-box-tlt">地址</text></div>
+    </div>
+
+    <!-- 第二个页面内容-->
+    <div class="item-container" :style="contentStyle">
+      <text>特别推荐</text>
+    </div>
+
+    <!-- 第三个页面内容-->
+    <div class="item-container" :style="contentStyle">
+      <text>消息中心</text>
+    </div>
+
+    <!-- 第四个页面内容-->
+    <div class="item-container" :style="contentStyle">
+      <text>我的主页</text>
+    </div>
+  </wxc-tab-bar>
 </template>
 
 <style scoped lang='scss' type="text/scss">
-
+.item-container {
+  width: 750px;
+  background-color: #f2f3f4;
+  align-items: center;
+  justify-content: center;
+  .adress{
+    color: red;
+  }
+}
+.iconfont{
+  font-family: 'iconfont'
+}
 </style>
 
 <script>

@@ -1,0 +1,28 @@
+/*
+* @Author: lcm
+* @Date:   2017-05-22 18:19:07
+ * @Last Modified by: lucm
+ * @Last Modified time: 2018-03-01 15:03:55
+*/
+
+// @import '../../../style/_include/_all';
+.wrapper {
+    width: 640px;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 320px;
+    height: 200px;
+  }
+  .greeting {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    color: #41b883;
+  }
+  .message {
+    margin: 30px;
+    font-size: 32px;
+    color: #727272;
+  }
