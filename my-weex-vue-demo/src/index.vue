@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
     <keep-alive>
-      <router-view v-if="$route.meta.keepAlive"></router-view>
+      <router-view class="gBox" v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
-    <router-view v-if="!$route.meta.keepAlive"></router-view>
+    <router-view class="gBox" v-if="!$route.meta.keepAlive"></router-view>
     <weexMyTabBar @onTabTo="onTabTo"></weexMyTabBar>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     let domModule = weex.requireModule('dom')
     domModule.addRule('fontFace', {
       fontFamily: 'iconfont',
-      src: "url('//at.alicdn.com/t/font_590372_koxf55xragfa8aor.ttf')"
+      src: "url('//at.alicdn.com/t/font_590372_taw14f7ymyzj8aor.ttf')"
     })
   },
   components: {
@@ -33,6 +33,13 @@ export default {
 <style lang='scss' type="text/scss">
 .iconfont {
   font-family: 'iconfont';
+}
+.gBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 </style>
 

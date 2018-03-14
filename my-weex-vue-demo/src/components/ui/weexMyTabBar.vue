@@ -34,33 +34,28 @@ export default {
       tabTitles: [
         {
           title: '首页',
-          icon: '&#xe8e1;',
+          icon: '&#xe8e2;',
           activeIcon: '&#xe8e1;'
         },
         {
-          title: '特别推荐',
-          icon: '&#xe8e1;',
+          title: '消息',
+          icon: '&#xe62f;',
           activeIcon: '&#xe8e1;'
         },
         {
-          title: '消息中心',
-          icon: '&#xe8e1;',
+          title: '工单',
+          icon: '&#xe8df;',
           activeIcon: '&#xe8e1;'
         },
         {
-          title: '个人中心',
-          icon: '&#xe8e1;',
-          activeIcon: '&#xe8e1;'
-        },
-        {
-          title: '个人中心',
-          icon: '&#xe8e1;',
+          title: '推荐',
+          icon: '&#xe8f4;',
           activeIcon: '&#xe8e1;'
         },
         {
           title: '个人中心',
-          icon: '&#xe8e1;',
-          activeIcon: '&#xe8e1;'
+          icon: '&#xe903;',
+          activeIcon: '&#xe903;'
         }
       ],
       tabStyles: {
