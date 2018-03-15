@@ -29,7 +29,9 @@ module.exports = {
         "space-before-function-paren": [0, "always"],
         // 强制使用一致的反勾号、单引号
         "quotes": [2, "single"],
-        "indent": [1, 2],
+        "indent": ["error", 2], //强制一致的缩进风格
+        "no-unused-vars": [2, { "vars": "all", "args": "after-used" }], //不允许有声明后未使用的变量或者参数
+        "no-use-before-define": [2, "nofunc"], //不允许在未定义之前就使用变量
         // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
     }
