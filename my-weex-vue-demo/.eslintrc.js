@@ -28,7 +28,7 @@ module.exports = {
         'generator-star-spacing': 'off',
         "space-before-function-paren": [0, "always"],
         // 强制使用一致的反勾号、单引号
-        "quotes": [2, "single"],
+        "quotes": [4, "single"],
         // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
     }
