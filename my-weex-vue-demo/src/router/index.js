@@ -24,7 +24,7 @@ let newRouter = [
     ...dataServicesRouter,
     ...myProjectsRouter,
     ...usersCenterRouter,
-    ...workOrdersRouter,
+    ...workOrdersRouter
 ]
 module.exports = new Router({
     routes: newRouter
