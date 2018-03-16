@@ -5,7 +5,10 @@
       <text>首页</text>
       <text>首页iconfont</text>
       <text class="icon-browser iconfont"></text>
-      <div class="i-box-l"><text class="i-box-icon adress iconfont i-c-blue">&#xe66a;</text><text class="i-box-tlt">地址</text></div>
+      <div class="i-box-l">
+        <text class="i-box-icon adress iconfont i-c-blue">&#xe66a;</text>
+        <text class="i-box-tlt">地址</text>
+      </div>
     </div>
 
     <!-- 第二个页面内容-->
@@ -31,12 +34,12 @@
   background-color: #f2f3f4;
   align-items: center;
   justify-content: center;
-  .adress{
+  .adress {
     color: red;
   }
 }
-.iconfont{
-  font-family: 'iconfont'
+.iconfont {
+  font-family: 'iconfont';
 }
 </style>
 
