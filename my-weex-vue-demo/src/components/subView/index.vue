@@ -12,6 +12,9 @@ import weexMyTabBar from 'weexMyTabBar'
 /* eslint-disable*/
 let domModule = weex.requireModule('dom')
 export default {
+  data(){
+    return{}
+  },
   created() {},
   components: {
     weexMyTabBar

@@ -2,7 +2,7 @@
  * @Author: lcm
  * @Date:   2017-04-17 18:01:21
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-03-16 11:02:24
+ * @Last Modified time: 2018-03-16 15:05:11
  */
 
 'use strict'
@@ -21,7 +21,9 @@ var baseObj = {
   base64: srcDir + '/tools/base64',
 
   // home.vue
-  homeVue: srcDir + '/components/home/index'
+  homeVue: srcDir + '/components/home/index',
+  // *************************api********************** //
+  usersCenterApi: srcDir + '/usersCenter/usersCenter'
 }
 var subView = require('./_include/subView')
 var ui = require('./_include/ui')

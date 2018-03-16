@@ -13,21 +13,19 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 90px;
+  height: px2rem(90);
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   border-top-width: 1px;
   border-top-color: #d9d9d9;
   background-color: #fafafa;
-  .tabIcon{
+  .tabIcon {
     text-align: center;
   }
 }
 </style>
 <script>
-import { Utils } from 'weex-ui'
-
 export default {
   data: () => ({
     configTt: {
@@ -75,17 +73,7 @@ export default {
     },
     contentStyle: ''
   }),
-  created() {
-    console.log(Utils)
-    // const tabPageHeight = Utils.env.getPageHeight()
-    // 如果页面没有导航栏，可以用下面这个计算高度的方法
-    // const tabPageHeight = env.deviceHeight / env.deviceWidth * 750;
-  },
-  methods: {
-    wxcTabBarCurrentTabSelected(e) {
-      const index = e.page
-      console.log(index)
-    }
-  }
+  created() {},
+  methods: {}
 }
 </script>
