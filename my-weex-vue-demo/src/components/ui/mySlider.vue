@@ -9,16 +9,16 @@
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
 .slider {
-  width: px2rem(750);
+  width: px2rem(375);
   height: px2rem(200);
   border-style: solid;
   border-color: #19201d;
   .image {
-    width: px2rem(750);
+    width: px2rem(375);
     height: px2rem(200);
   }
   .frame {
-    width: px2rem(750);
+    width: px2rem(375);
     height: px2rem(200);
     position: relative;
   }

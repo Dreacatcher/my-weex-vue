@@ -2,26 +2,33 @@
   <div class="tabPageWrap">
     <div class="itemTab" v-for="(item,index) in configTt.tabTitles" :key="index">
       <text class="tabIcon iconfont" v-html="item.icon"></text>
-      <text>{{item.title}}</text>
+      <text class="tabTt">{{item.title}}</text>
     </div>
   </div>
 </template>
 
 <style scoped lang='scss' type="text/scss">
+@import '../../style/_include/_all';
 .tabPageWrap {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: px2rem(90);
+  height: px2rem(50);
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  align-content: center;
   border-top-width: 1px;
   border-top-color: #d9d9d9;
   background-color: #fafafa;
   .tabIcon {
     text-align: center;
+    font-size: px2rem(24);
+  }
+  .tabTt {
+    font-size: px2rem(12);
   }
 }
 </style>
