@@ -19,9 +19,9 @@ let newArr = [{
 }, {
     path: '/home',
     component: SubViewVue,
-    redirect: '/home/subhome',
+    redirect: '/home/index',
     children: [{
-        path: 'subhome',
+        path: 'index',
         name: 'HomeVue',
         component: HomeVue
             // meta: { keepAlive: true } // 缓存组件（true：缓存，false: 不缓存，默认为false）
