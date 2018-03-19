@@ -1,6 +1,6 @@
 <template>
   <div class="tabPageWrap">
-    <div class="itemTab" v-for="(item,index) in configTt.tabTitles" :key="index">
+    <div class="itemTab" v-for="(item,index) in configTt.tabTitles" :key="index" @click="toToPage(item.goToPath)">
       <text class="tabIcon iconfont" v-html="item.icon"></text>
       <text class="tabTt">{{item.title}}</text>
     </div>
@@ -40,27 +40,32 @@ export default {
         {
           title: '首页',
           icon: '&#xe8e2;',
-          activeIcon: '&#xe8e1;'
+          activeIcon: '&#xe8e1;',
+          goToPath: 'index'
         },
         {
           title: '消息',
           icon: '&#xe62f;',
-          activeIcon: '&#xe8e1;'
+          activeIcon: '&#xe8e1;',
+          goToPath: 'messege'
         },
         {
           title: '工单',
           icon: '&#xe8df;',
-          activeIcon: '&#xe8e1;'
+          activeIcon: '&#xe8e1;',
+          goToPath: 'workOrders'
         },
         {
           title: '推荐',
           icon: '&#xe8f4;',
-          activeIcon: '&#xe8e1;'
+          activeIcon: '&#xe8e1;',
+          goToPath: 'recommend'
         },
         {
           title: '个人中心',
           icon: '&#xe903;',
-          activeIcon: '&#xe903;'
+          activeIcon: '&#xe903;',
+          goToPath: 'usersCenter'
         }
       ],
       tabStyles: {
@@ -81,6 +86,10 @@ export default {
     contentStyle: ''
   }),
   created() {},
-  methods: {}
+  methods: {
+    toToPage(goToPath) {
+      this.$emit('toToPage', goToPath)
+    }
+  }
 }
 </script>

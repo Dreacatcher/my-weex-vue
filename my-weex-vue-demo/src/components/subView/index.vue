@@ -4,7 +4,7 @@
       <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
     <router-view v-if="!$route.meta.keepAlive"></router-view>
-    <weexMyTabBar @onTabTo="onTabTo"></weexMyTabBar>
+    <weexMyTabBar @toToPage="onTabTo"></weexMyTabBar>
   </div>
 </template>
 <script>
@@ -20,9 +20,10 @@ export default {
     weexMyTabBar
   },
   methods: {
-    onTabTo(_result) {
-      let _key = _result.data.key || ''
-      this.$router && this.$router.push('/' + _key)
+    onTabTo(_key) {
+      console.log(_key)
+      // let _key = _result.data.key || ''
+      this.$router && this.$router.push('/home/' + _key)
     }
   }
 }

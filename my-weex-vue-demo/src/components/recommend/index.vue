@@ -1,6 +1,6 @@
 <template>
   <div>
-    <text>个人中心</text>
+    <text>recommendrecommendrecommendrecommend</text>
   </div>
 </template>
 

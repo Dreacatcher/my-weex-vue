@@ -3,10 +3,9 @@ import MyVue from 'vue'
 import Router from 'vue-router'
 import HomeVue from 'homeVue'
 import SubViewVue from 'subViewVue'
-import demorRouter from './_include/demo'
 import messegeRouter from './_include/messege'
 import dataServicesRouter from './_include/dataServices'
-import myProjectsRouter from './_include/myProjects'
+import recommendRouter from './_include/recommend'
 import usersCenterRouter from './_include/usersCenter'
 import workOrdersRouter from './_include/workOrders'
 /* eslint-disable*/
@@ -30,10 +29,9 @@ let newArr = [{
 }]
 let newRouter = [
     ...newArr,
-    ...demorRouter,
     ...messegeRouter,
     ...dataServicesRouter,
-    ...myProjectsRouter,
+    ...recommendRouter,
     ...usersCenterRouter,
     ...workOrdersRouter
 ]

@@ -2,7 +2,7 @@
  * @Author: lcm
  * @Date:   2017-04-17 18:01:21
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-03-16 15:05:11
+ * @Last Modified time: 2018-03-19 14:19:07
  */
 
 'use strict'
@@ -31,7 +31,7 @@ var dataServices = require('./_include/dataServices')
 var messege = require('./_include/messege')
 var workOrders = require('./_include/workOrders')
 var usersCenter = require('./_include/usersCenter')
-var myProjects = require('./_include/myProjects')
+var recommend = require('./_include/recommend')
 
 var newConfig = Object.assign(
   baseObj,
@@ -41,6 +41,6 @@ var newConfig = Object.assign(
   messege,
   workOrders,
   usersCenter,
-  myProjects
+  recommend
 )
 module.exports = newConfig
