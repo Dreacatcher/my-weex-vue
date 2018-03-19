@@ -10,16 +10,29 @@
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
 .imgBtnItemWp {
-  height: px2rem(90);
   display: flex;
-  flex: 1;
-  text-align: center;
-  flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  .imgBtnItem {
+    width: px2rem(88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: px2rem(70);
+    text-align: center;
+    margin-bottom: px2rem(10);
+  }
   .tabIcon {
     text-align: center;
-    font-size: px2rem(24);
+    width: px2rem(50);
+    height: px2rem(50);
+    padding-left: px2rem(10);
+    padding-right: px2rem(10);
+    padding-bottom: px2rem(10);
+    padding-top: px2rem(10);
+    font-size: px2rem(28);
+    border-radius: px2rem(200);
+    background: burlywood;
   }
   .tabTitle {
     text-align: center;

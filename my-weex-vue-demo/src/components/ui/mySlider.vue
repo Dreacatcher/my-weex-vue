@@ -3,6 +3,7 @@
     <div class="frame" v-for="(img,index) in imageList" :key="index">
       <image :placeholder="img.info" class="image" resize="cover" :src="img.src" />
     </div>
+    <indicator class="indicator"></indicator>
   </slider>
 </template>
 
@@ -21,6 +22,16 @@
     width: px2rem(375);
     height: px2rem(200);
     position: relative;
+  }
+  .indicator{
+    width: px2rem(375);
+    height: px2rem(20);
+    item-color: white;
+    item-selected-color: red;
+    item-size: px2rem(8);
+    position: absolute;
+    bottom: px2rem(4);
+    right: 0;
   }
 }
 </style>
