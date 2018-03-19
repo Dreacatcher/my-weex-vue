@@ -51,8 +51,8 @@
 <script>
 import ImgBtn from 'imgBtn'
 import MySlider from 'mySlider'
-import Head from '../ui/Header.vue'
-import NewItem from '../ui/newItem.vue'
+import Head from 'header'
+import NewItem from 'newItem'
 export default {
   data() {
     return {}
