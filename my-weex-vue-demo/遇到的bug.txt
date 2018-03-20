@@ -10,3 +10,6 @@
     }
 5、scoped是样式不起作用，可在当前元素兄弟列引入一个组件
 6、左右布局需要设置外边父元素为flex-direction: row;
+7、weex debug 报错：vue@2.2.4 与：vue-template-compiler@2.2.6版本不兼容
+    weex xbind repair toolkit-repair
+    weex repair

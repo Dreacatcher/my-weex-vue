@@ -14,25 +14,24 @@
   height: px2rem(200);
   border-style: solid;
   border-color: #19201d;
-  .image {
-    width: px2rem(375);
-    height: px2rem(200);
-  }
-  .frame {
-    width: px2rem(375);
-    height: px2rem(200);
-    position: relative;
-  }
-  .indicator{
-    width: px2rem(375);
-    height: px2rem(20);
-    item-color: white;
-    item-selected-color: red;
-    item-size: px2rem(8);
-    position: absolute;
-    bottom: px2rem(4);
-    right: 0;
-  }
+}
+.image {
+  width: px2rem(375);
+  height: px2rem(200);
+}
+.frame {
+  width: px2rem(375);
+  height: px2rem(200);
+}
+.indicator {
+  width: px2rem(375);
+  height: px2rem(20);
+  item-color: $white;
+  item-selected-color: $red;
+  item-size: px2rem(8);
+  position: absolute;
+  bottom: px2rem(4);
+  right: 0;
 }
 </style>
 

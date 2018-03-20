@@ -14,26 +14,22 @@
   padding-right: px2rem(10);
 }
 .newItem {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   flex-direction: row;
   padding-top: px2rem(6);
   padding-bottom: px2rem(4);
-  box-sizing: border-box;
   border-bottom-color: $listBorderColor;
   border-bottom-width: px2rem(2);
-  .newItemImg {
-    width: px2rem(60);
-    height: px2rem(60);
-    margin-right: px2rem(6);
-  }
-  .newItemTitle {
-    width: px2rem(285);
-    display: inline-block;
-    font-size: px2rem(12);
-  }
+}
+.newItemImg {
+  width: px2rem(60);
+  height: px2rem(60);
+  margin-right: px2rem(6);
+}
+.newItemTitle {
+  width: px2rem(285);
+  font-size: px2rem(12);
 }
 </style>
 <script>

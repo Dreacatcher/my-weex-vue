@@ -32,7 +32,6 @@ export default {
 
 <style type="text/scss" lang="scss">
 .weexMyTabBarParentWp {
-  display: block;
   position: absolute;
   top: 90px;
   left: 0;

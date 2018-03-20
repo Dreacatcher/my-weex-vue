@@ -25,8 +25,6 @@
   height: px2rem(50);
   padding-top: px2rem(10);
   padding-bottom: px2rem(10);
-  display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -34,49 +32,50 @@
   opacity: 0.99;
   padding-left: px2rem(10);
   padding-right: px2rem(10);
+  border-bottom-color: $listBorderColor;
+  border-bottom-width: px2rem(2);
+}
+.scan,
+.notice {
+  width: px2rem(50);
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  color: $gray;
+  width: px2rem(30);
+  text-align: center;
+  font-size: px2rem(18);
+}
+.txt {
+  color: $gray;
+  font-size: px2rem(12);
+}
 
-  .scan,
-  .notice {
-    width: px2rem(30);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .icon {
-      color: $gray;
-      width: px2rem(30);
-      text-align: center;
-      font-size: px2rem(18);
-    }
-    .txt {
-      color: $gray;
-      font-size: px2rem(12);
-    }
-  }
-  .scan {
-    margin-right: px2rem(6);
-  }
-  .notice {
-    margin-left: px2rem(6);
-  }
-  .search {
-    height: px2rem(30);
-    width: px2rem(283);
-    font-size: px2rem(12);
-    align-items: center;
-    flex-direction: row;
-    background-color: $colorededed;
-    border-radius: px2rem(8);
-    .searchIcon {
-      font-size: px2rem(18);
-      padding-right: px2rem(10);
-      padding-left: px2rem(10);
-      color: $fzActive;
-    }
-    .searchTxt {
-      font-size: px2rem(12);
-      color: $fzActive;
-    }
-  }
+.scan {
+  margin-right: px2rem(6);
+}
+.notice {
+  margin-left: px2rem(6);
+}
+.search {
+  height: px2rem(30);
+  width: px2rem(255);
+  font-size: px2rem(12);
+  align-items: center;
+  flex-direction: row;
+  background-color: $colorededed;
+  border-radius: px2rem(8);
+}
+.searchIcon {
+  font-size: px2rem(18);
+  padding-right: px2rem(10);
+  padding-left: px2rem(10);
+  color: $fzActive;
+}
+.searchTxt {
+  font-size: px2rem(12);
+  color: $fzActive;
 }
 </style>
 <script>

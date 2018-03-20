@@ -15,32 +15,30 @@
   left: 0;
   right: 0;
   height: px2rem(50);
-  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  align-content: center;
   border-top-width: 1px;
   border-top-color: #d9d9d9;
   background-color: #fafafa;
-  .itemTab {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-  }
-  .tabIcon,
-  .tabTt {
-    text-align: center;
-  }
-  .tabIcon {
-    font-size: px2rem(24);
-  }
-  .tabTt {
-    font-size: px2rem(12);
-  }
-  .selectItemTab {
-    color: red;
-  }
+}
+.itemTab {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.tabIcon,
+.tabTt {
+  text-align: center;
+}
+.tabIcon {
+  font-size: px2rem(24);
+}
+.tabTt {
+  font-size: px2rem(12);
+}
+.selectItemTab {
+  color: #ff0000;
 }
 </style>
 <script>

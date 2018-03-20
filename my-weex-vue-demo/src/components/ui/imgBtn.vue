@@ -10,34 +10,32 @@
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
 .imgBtnItemWp {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  .imgBtnItem {
-    width: px2rem(88);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: px2rem(70);
-    text-align: center;
-    margin-bottom: px2rem(10);
-  }
-  .tabIcon {
-    text-align: center;
-    width: px2rem(50);
-    height: px2rem(50);
-    padding-left: px2rem(10);
-    padding-right: px2rem(10);
-    padding-bottom: px2rem(10);
-    padding-top: px2rem(10);
-    font-size: px2rem(28);
-    border-radius: px2rem(200);
-    background: burlywood;
-  }
-  .tabTitle {
-    text-align: center;
-    font-size: px2rem(14);
-  }
+}
+.imgBtnItem {
+  width: px2rem(88);
+  align-items: center;
+  justify-content: center;
+  height: px2rem(70);
+  text-align: center;
+  margin-bottom: px2rem(10);
+}
+.tabIcon {
+  text-align: center;
+  width: px2rem(50);
+  height: px2rem(50);
+  padding-left: px2rem(10);
+  padding-right: px2rem(10);
+  padding-bottom: px2rem(10);
+  padding-top: px2rem(10);
+  font-size: px2rem(28);
+  border-radius: px2rem(200);
+  background-color: #deb887;
+}
+.tabTitle {
+  text-align: center;
+  font-size: px2rem(14);
 }
 </style>
 <script>
