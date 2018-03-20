@@ -1,7 +1,7 @@
 <template>
   <div class="imgBtnItemWp">
     <div class="imgBtnItem" v-for="(item,index) in configTt.tabTitles" :key="index">
-      <text class="tabIcon iconfont" v-html="item.icon"></text>
+      <text class="tabIcon iconfont" >{{getFontName(item.icon)}}</text>
       <text class="tabTitle">{{item.title}}</text>
     </div>
   </div>
@@ -9,6 +9,9 @@
 
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
+.iconfont {
+  font-family: iconfont;
+}
 .imgBtnItemWp {
   flex-direction: row;
   flex-wrap: wrap;
@@ -39,6 +42,7 @@
 }
 </style>
 <script>
+import he from 'he'
 export default {
   data() {
     return {
@@ -74,6 +78,10 @@ export default {
     }
   },
   created() {},
-  methods: {}
+  methods: {
+    getFontName(_fontName) {
+      return he.decode(_fontName)
+    }
+  }
 }
 </script>

@@ -16,6 +16,9 @@
 </template>
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
+.iconfont {
+  font-family: iconfont;
+}
 .headWp {
   position: fixed;
   width: px2rem(375);

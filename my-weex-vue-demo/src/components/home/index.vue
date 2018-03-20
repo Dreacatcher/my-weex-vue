@@ -17,7 +17,9 @@
 </template>
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
-
+.iconfont {
+  font-family: iconfont;
+}
 .head {
   height: px2rem(50);
 }

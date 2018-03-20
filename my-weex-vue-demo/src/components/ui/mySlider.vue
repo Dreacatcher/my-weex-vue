@@ -9,6 +9,9 @@
 
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
+.iconfont {
+  font-family: iconfont;
+}
 .slider {
   width: px2rem(375);
   height: px2rem(200);

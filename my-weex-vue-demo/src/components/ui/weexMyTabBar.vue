@@ -1,7 +1,8 @@
 <template>
   <div class="tabPageWrap">
     <div class="itemTab" v-for="(item,index) in configTt.tabTitles" :key="index" @click="toToPage(item.goToPath)">
-      <text :class="[selectedClass==item.goToPath?'selectItemTab':'','tabIcon iconfont']" v-html="item.icon">&nbsp; </text>
+      <text :class="[selectedClass==item.goToPath?'selectItemTab':'','tabIcon iconfont']" >{{getFontName(item.icon)}}</text>
+      <!-- <text :class="[selectedClass==item.goToPath?'selectItemTab':'','tabIcon iconfont']" v-html="item.icon">&nbsp; </text> -->
       <text :class="[selectedClass==item.goToPath?'selectItemTab':'','tabTt']">{{item.title}}</text>
     </div>
   </div>
@@ -9,6 +10,9 @@
 
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
+.iconfont {
+  font-family: iconfont;
+}
 .tabPageWrap {
   position: fixed;
   bottom: 0;
@@ -42,6 +46,7 @@
 }
 </style>
 <script>
+import he from 'he'
 export default {
   data: () => ({
     configTt: {
@@ -81,6 +86,9 @@ export default {
       this.$emit('toToPage', goToPath)
       console.log(this.selectedClass)
       this.selectedClass = goToPath
+    },
+    getFontName(_fontName) {
+      return he.decode(_fontName)
     }
   }
 }

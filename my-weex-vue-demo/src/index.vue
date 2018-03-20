@@ -11,13 +11,13 @@
 let domModule = weex.requireModule('dom')
 export default {
   created() {
-    // let domModule = weex.requireModule('dom')
-    // let times = new Date().getTime()
-    // domModule.addRule('fontFace', {
-    //   fontFamily: 'iconfont',
-    //   src: "url(\'http://at.alicdn.com/t/font_590372_taw14f7ymyzj8aor.ttf?"+times+"\')"
-    // })
-    this.loadingFont()
+    let domModule = weex.requireModule('dom')
+    let times = new Date().getTime()
+    domModule.addRule('fontFace', {
+      'fontFamily': "iconfont",
+      'src': "url('http://at.alicdn.com/t/font_590372_taw14f7ymyzj8aor.ttf')"
+    })
+    // this.loadingFont()
   },
   mounted() {},
   methods: {
@@ -51,6 +51,6 @@ export default {
 </script>
 <style lang='scss' type="text/scss">
 .iconfont {
-  font-family: 'iconfont';
+  font-family: iconfont;
 }
 </style>

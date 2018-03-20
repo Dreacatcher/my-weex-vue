@@ -9,6 +9,9 @@
 
 <style scoped lang='scss' type="text/scss">
 @import '../../style/_include/_all';
+.iconfont {
+  font-family: iconfont;
+}
 .newItemWp {
   padding-left: px2rem(10);
   padding-right: px2rem(10);
