@@ -1,8 +1,8 @@
 /*
  * @Author: lcm
  * @Date:   2017-04-17 18:01:21
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-03-20 23:44:34
+ * @Last Modified by: lucm
+ * @Last Modified time: 2018-03-21 09:26:03
  */
 
 'use strict'
@@ -19,6 +19,7 @@ var baseObj = {
   common: srcDir + '/tools/common',
   base: srcDir + '/tools/base',
   base64: srcDir + '/tools/base64',
+  util: srcDir + '/tools/util',
 
   // home.vue
   homeVue: srcDir + '/components/home/index',

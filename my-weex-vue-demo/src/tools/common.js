@@ -1,8 +1,8 @@
 /*
  * @Author: lcm
  * @Date:   2017-05-23 15:41:16
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-03-20 23:45:50
+ * @Last Modified by: lucm
+ * @Last Modified time: 2018-03-21 09:28:49
  */
 import he from 'he'
 class Tool {

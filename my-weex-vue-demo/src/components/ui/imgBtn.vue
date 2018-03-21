@@ -42,7 +42,7 @@
 }
 </style>
 <script>
-import he from 'he'
+import util from 'util'
 export default {
   data() {
     return {
@@ -80,7 +80,7 @@ export default {
   created() {},
   methods: {
     getFontName(_fontName) {
-      return he.decode(_fontName)
+      return util.getFontName(_fontName)
     }
   }
 }

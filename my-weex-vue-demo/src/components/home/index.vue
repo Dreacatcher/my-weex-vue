@@ -1,6 +1,5 @@
 <template>
   <div class="gBoxWp">
-
     <Head></Head>
     <scroller class="gBoxMain" offset-accuracy="300" loadmoreoffset="300" @loadmore="onloadmore">
       <div class="sliderWp">
